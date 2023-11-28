@@ -5,9 +5,35 @@
 }
 body {
 	background-image: url("../img/paw-green.jpg");
-	font-family: "Montserrat", sans-serif;
 	background-color: #333;
 	background-size: cover;
 	background-position: center;
 	font-family: "Sue Ellen Francisco", cursive;
+}
+.dog-api-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 5rem;
+	justify-content: center;
+	color: #024299;
+	margin-top: 20px;
+}
+.picture-btn {
+	background: #024299;
+	width: 220px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 15px;
+	color: #1ec6d9;
+	border: none;
+	font-weight: bold;
+	margin-left: 170px;
+	font-family: "Sue Ellen Francisco", cursive;
+	font-size: 1.5rem;
+	text-transform: uppercase;
 }
