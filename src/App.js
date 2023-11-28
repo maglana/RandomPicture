@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./CSS/style.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const FIRST_IMG =
+	"https://cdn.pixabay.com/photo/2021/11/11/00/20/dogs-6785135_1280.png";
+const DOG_URL = "https://dog.ceo/api/breeds/image/random";
+
+export const App = () => {
+	const [imageUrl, setImageUrl] = useState(null);
+
+	return (
+		<div className='dog-api-wrapper'>
+			<h1>
+				Wylosuj pieska! <i class='fa-solid fa-paw'></i>
+			</h1>
+			<button className='picture-btn'></button>
+		</div>
+	);
+};
 
 export default App;
