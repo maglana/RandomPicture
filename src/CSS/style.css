@@ -9,6 +9,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	font-family: "Sue Ellen Francisco", cursive;
+	overflow: hidden;
 }
 .dog-api-wrapper {
 	display: flex;
@@ -16,12 +17,23 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
-h1 {
+.part1 h1 {
 	text-transform: uppercase;
 	font-size: 5rem;
 	justify-content: center;
 	color: #024299;
 	margin-top: 20px;
+}
+.part2 {
+	height: 70vh;
+}
+.part1 {
+	height: 30vh;
+}
+.random-img {
+	width: 500px;
+	border-radius: 15px;
+	text-transform: uppercase;
 }
 .picture-btn {
 	background: #024299;
